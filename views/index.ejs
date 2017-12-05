@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY APP</title>
+    <style>
+        body{
+            background-color: #72ffeb;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            
+        }
+        .quotes{
+            text-align: justify;
+        }
+        p{
+            text-align: center;
+            font-size: 50px;
+        }
+        .quotes-list{
+
+        }
+    </style>
+</head>
+<body>
+<p>Welcome</p>
+<div class="quotes-list">
+<ul class="quotes">
+    <% for(var i=0; i<quotes.length; i++) {%>
+    <li class="quote">
+        <span><strong><%= quotes[i].name %></strong></span>
+        <span><%= quotes[i].quote %></span>
+    </li>
+    <% } %>
+</ul>
+</div>
+<h2>Add name and quotes to the list</h2>
+
+<form action="/quotes" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="quote" name="quote">
+    <button type="submit">Submit</button>
+</form>
+<div>
+    <h2>Replace last quote written by Abrahm Maslow with a quote written by Aristotle</h2>
+    <button id="update"> update Abraham Maslow </button>
+</div>
+    <h2>Delete Baltasar Gracian's quote quote</h2>
+    <button id="delete"> Delete Baltasar Gracian </button>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
