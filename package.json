@@ -1,11 +1,10 @@
 {
-  "name": "web1",
+  "name": "offcanvas",
   "version": "1.0.0",
-  "description": "",
+  "description": "Off-Canvas Menu Effects =========",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-
   },
   "author": "",
   "license": "ISC",
